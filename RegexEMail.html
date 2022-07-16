@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RegexEmail</title>
+</head>
+<script type="text/javascript">
+	var regEmail=/(^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-z]+(\.[a-zA-Z0-9_-])?)/
+	do{
+		var x=window.prompt("Enter Valid Email:")
+		if (regEmail.test(x))
+		{
+			document.write("Valid Email..!")
+			break
+		}
+		else
+		{
+			console.log("Enter Valid Email.....??")
+		}
+	}while(x!=null)
+</script>
+<body>
+</body>
+</html>

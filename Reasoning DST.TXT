@@ -1,0 +1,17 @@
+<!..a person travels at a speed of 3km/hr and he'll take 5hrs(65min:ans=3*65/60) of time to reach destination what is the distance...? ans:15km
+
+a person travels at a speed of 3km/hr and takes 65minutes to reach destination distance in meters..? ans:3.25*1000
+
+a person travels at a speed of 3m/s and takes 65minutes to reach destination distance in meters..? ans:65*60*3=11700m or 11.7km
+
+a person travels at a speed of 8km in 5hrs to reach destination speed in meters..? ans:8/5km or 8/5*5/18 m/s
+
+a person travels at a speed of 8km in 4000 minutes  what is his speed..? ans:8/(4000/60)km/hrs
+
+a person crosses 600m long street in 5minutes what is his speed in km?ans:2m/s or 2*5/18 km/hr
+
+an aeroplane covers a certain distance at speed of 240km/hr in 5hrs to cover the same in distance in 1and 2/3 hrs it must be in speed of what...?ans:720kmph
+
+if a person a walks at 14kmph instead of 10kmph he would have walked 20km more the actual distance travelled by him is...?ans:x/10=(x+20)/14 =>x=50km is the actual distance
+
+a man complets a journey in 10hrs he travels first half of the journey at the rate of 21kmph and second half of the journey at the rate of 24kmph find the total journey...?(x/2)/21 +(x/2)/24=10 and x is total..

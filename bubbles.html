@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bubbles</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<style type="text/css">
+	body{
+		background-color:#fff;
+	}
+	.container{
+		position: relative;
+		max-width:1300px;
+		height: 100vh;
+	}
+	.container div{
+		position:absolute;
+		top: 40%;
+		left: 40%;
+		width: 100px;
+		height: 100px;
+		float: left;
+		margin: 0px 10px;
+		border-radius: 50%;
+	}
+	.container .thirdb{
+		background-color: red;
+	}
+	#firstb{
+		box-shadow: inset 0 0 50px sienna;
+	}
+	#secondb{
+		box-shadow: inset 0 0 50px blue;
+	}
+	#thirdb{
+		box-shadow: inset 0 0 50px yellow;
+	}
+	#fourthb{
+		box-shadow: inset 0 0 50px darkcyan;
+	}
+	#fifthb{
+		box-shadow: inset 0 0 50px green;
+	}
+	#sixthb{
+		box-shadow: inset 0 0 50px pink;
+	}
+	#seventhb{
+		box-shadow: inset 0 0 50px lightgreen;
+	}
+	#eighthb{
+		box-shadow: inset 0 0 50px salmon;
+	}
+	#ninethb{
+		box-shadow: inset 0 0 50px slateblue;
+	}
+	#tenthb{
+		box-shadow: inset 0 0 50px lightgreen;
+	}#firstb1{
+		box-shadow: inset 0 0 50px lightgreen;
+	}
+	#secondb1{
+		box-shadow: inset 0 0 50px fuchsia;
+	}
+	#thirdb1{
+		box-shadow: inset 0 0 50px palegreen;
+	}
+	#fourthb1{
+		box-shadow: inset 0 0 50px gold;
+	}
+	#fifthb1{
+		box-shadow: inset 0 0 50px forestgreen;
+	}
+	#sixthb1{
+		box-shadow: inset 0 0 50px indigo;
+	}
+	#seventhb1{
+		box-shadow: inset 0 0 50px lightgreen;
+	}
+	#eighthb1{
+		box-shadow: inset 0 0 50px bisque;
+	}
+	#ninethb1{
+		box-shadow: inset 0 0 50px burlywood;
+	}
+	#tenthb1{
+		box-shadow: inset 0 0 50px blanchedalmond;
+	}
+</style>
+<body>
+	<div class="container">
+		<div id="firstb" style="padding-top: 1%;">
+	
+		</div>
+		<div id="secondb">
+			
+		</div>
+		<div id="thirdb">
+			
+		</div>
+		<div id="fourthb">
+			
+		</div>
+		<div id="fifthb">
+			
+		</div>
+		<div id="sixthb">
+			
+		</div>
+		<div id="seventhb">
+			
+		</div>
+		<div id="eighthb">
+
+		</div>
+		<div id="ninethb">
+			
+		</div>
+		<div id="tenthb">
+			
+		</div>
+		<div id="firstb1">
+		</div>
+		<div id="secondb1">
+			
+		</div>
+		<div id="thirdb1">
+			
+		</div>
+		<div id="fourthb1">
+			
+		</div>
+		<div id="fifthb1">
+			
+		</div>
+		<div id="sixthb1">
+			
+		</div>
+		<div id="seventhb1">
+			
+		</div>
+		<div id="eighthb1">
+
+		</div>
+		<div id="ninethb1">
+			
+		</div>
+		<div id="tenthb1">
+			
+		</div>
+	</div>
+<script type="text/javascript">
+		$("#firstb").animate({top:"500px",left:"100px",width:"100px",height:"100px"},7000,()=>{
+			$("#firstb").animate({left:"1000px",top:"300px",width:"150px",height:"150px"},7000,()=>{
+				$("#firstb").animate({top:"500px",left:"100px",width:"100px",height:"100px"},7000,()=>{
+					$("#firstb").animate({left:"1000px",top:"300px",width:"150px",height:"150px"},7000,()=>{
+						$("#firstb").animate({top:"300px",left:"1000px",width:"100px",height:"100px"},7000)
+					})
+				})
+			})
+		});
+		$("#tenthb").animate({top:"450px",right:"400px",width:"170px",height:"170px"},7000,()=>{
+			$("#tenthb").animate({right:"700px",top:"400px",width:"180px",height:"180px"},7000,()=>{
+				$("#tenthb").animate({top:"450px",right:"400px",width:"170px",height:"170px"},7000,()=>{
+					$("#tenthb").animate({top:"0px",left:"800px",width:"200px",height:"200px"},7000,()=>{
+						$("#tenthb").animate({right:"500px",top:"400px",width:"210px",height:"210px"},7000)
+					})
+				})
+			})
+		});
+		$("#secondb").animate({top:"500px",left:"200px",width:"210px",height:"210px"},7000,()=>{
+			$("#secondb").animate({left:"900px",top:"400px",width:"100px",height:"100px"},7000,()=>{
+				$("#secondb").animate({top:"500px",left:"400px",width:"210px",height:"210px"},7000,()=>{
+					$("#secondb").animate({left:"900px",top:"400px",width:"210px",height:"210px"},7000,()=>{
+						$("#secondb").animate({left:"500px",bottom:"400px",width:"210px",height:"210px"},7000,)
+					})
+				})
+			})
+		});
+		$("#ninethb").animate({top:"500px",right:"200px",bottom:"200px",width:"120px",height:"120px"},7000,()=>{
+			$("#ninethb").animate({right:"700px",top:"0px",width:"150px",height:"150px"},7000,()=>{
+				$("#ninethb").animate({top:"500px",right:"200px",width:"150px",height:"150px"},7000,()=>{
+					$("#ninethb").animate({left:"600px",top:"30px",width:"150px",height:"150px"},7000,()=>{
+						$("#ninethb").animate({top:"300px",right:"100px",width:"150px",height:"150px"},7000)
+					})
+				})
+			})
+		});
+		$("#thirdb").animate({top:"550px",left:"200px",width:"100px",height:"100px"},7000,()=>{
+			$("#thirdb").animate({left:"900px",top:"400px",width:"200px",height:"200px"},7000,()=>{
+			$("#thirdb").animate({top:"500px",left:"200px",width:"150px",height:"150px"},7000,()=>{
+				$("#thirdb").animate({left:"500px",bottom:"200px",width:"150px",height:"150px"},7000,()=>{
+					$("#thirdb").animate({left:"600px",top:"30px",width:"150px",height:"150px"},7000,()=>{
+						$("#thirdb").animate({top:"300px",right:"100px",width:"150px",
+							height:"150px"},7000)
+						})
+					})
+				})
+			})
+		});
+		$("#seventhb").animate({top:"500px",right:"200px",width:"140px",height:"140px"},7000,()=>{
+			$("#seventhb").animate({left:"400px",top:"80px",width:"100px",height:"100px"},7000,()=>{
+			$("#seventhb").animate({top:"500px",right:"400px",width:"200px",height:"200px"},7000,()=>{
+			$("#seventhb").animate({left:"400px",top:"80px",width:"150px",height:"150px"},7000,()=>{
+				$("#seventhb").animate({bottom:"500px",right:"200px",width:"150px",height:"150px"},7000,()=>{
+					$("#seventhb").animate({left:"600px",top:"30px",width:"150px",height:"150px"},7000)
+
+						})
+					})
+				})
+			})
+		});
+		$("#fourthb").animate({top:"500px",right:"300px",width:"110px",height:"110px"},7000,()=>{
+			$("#fourthb").animate({right:"500px",top:"0px",width:"190px",height:"190px"},7000)
+		});
+		$("#sixthb").animate({top:"700px",left:"300px",width:"190px",height:"190px"},7000,()=>{
+			$("#sixthb").animate({left:"900px",top:"60px",width:"180px",height:"180px"},7000)
+		});
+		$("#fifthb").animate({top:"500px",right:"200px",width:"100px",height:"100px"},7000,()=>{
+			$("#fifthb").animate({right:"200px",top:"400px",width:"150px",height:"150px"},7000)
+		});
+		$("#eighthb").animate({top:"500px",right:"100px",width:"230px",height:"230px"},7000,()=>{
+			$("#eighthb").animate({right:"200px",top:"400px",width:"100px",height:"100px"},7000)
+		});
+
+
+		$("#firstb1").animate({top:"500px",left:"500px",width:"100px",height:"100px"},7000,()=>{
+			$("#firstb1").animate({left:"100px",top:"300px",width:"150px",height:"150px"},7000)
+		});
+		$("#tenthb1").animate({top:"450px",right:"400px",width:"170px",height:"170px"},7000,()=>{
+			$("#tenthb1").animate({right:"200px",top:"400px",width:"180px",height:"180px"},7000)
+		});
+		$("#secondb1").animate({top:"500px",left:"200px",width:"210px",height:"210px"},7000,()=>{
+			$("#secondb1").animate({left:"900px",top:"400px",width:"100px",height:"100px"},7000)
+		});
+		$("#ninethb1").animate({top:"500px",right:"900px",width:"120px",height:"120px"},7000,()=>{
+			$("#ninethb1").animate({right:"200px",top:"0px",width:"150px",height:"150px"},7000)
+		});
+		$("#thirdb1").animate({top:"550px",left:"900px",width:"100px",height:"100px"},7000,()=>{
+			$("#thirdb1").animate({left:"900px",top:"400px",width:"200px",height:"200px"},7000)
+		});
+		$("#seventhb1").animate({top:"500px",right:"200px",width:"140px",height:"140px"},7000,()=>{
+			$("#seventhb1").animate({right:"200px",top:"0px",width:"100px",height:"100px"},7000)
+		});
+		$("#fourthb1").animate({top:"500px",right:"400px",width:"110px",height:"110px"},7000,()=>{
+			$("#fourthb1").animate({right:"500px",top:"10px",width:"190px",height:"190px"},7000)
+		});
+		$("#sixthb1").animate({top:"700px",left:"900px",width:"190px",height:"190px"},7000,()=>{
+			$("#sixthb1").animate({left:"900px",top:"0px",width:"180px",height:"180px"},7000)
+		});
+		$("#fifthb1").animate({top:"500px",right:"200px",width:"100px",height:"100px"},7000,()=>{
+			$("#fifthb1").animate({right:"600px",top:"100px",width:"150px",height:"150px"},7000)
+		});
+		$("#eighthb1").animate({top:"200px",right:"300px",width:"230px",height:"230px"},7000,()=>{
+			$("#eighthb1").animate({right:"200px",top:"100px",width:"100px",height:"100px"},7000)
+		});
+		/*$("#firstb").mouseover(()=>{
+			alert("Wow Sai the Handsome hunk")
+		})*/
+</script>
+</body>
+</html>

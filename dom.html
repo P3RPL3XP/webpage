@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BackgroundColorChanger</title>
+
+</head>
+<body id="body">
+	<button onclick="flicker()">Click here</button>
+</body>
+ <script type="text/javascript">
+		var i=0;	
+		var c= ["green","yellow","red","salmon","red"];
+		function flicker()
+		{			
+			if (i>c.length)
+			{
+				i=0;
+			}
+			document.body.style.backgroundColor=c[i];
+			i+=1;
+			setTimeout(flicker,1000);
+		}	
+</script>
+</html>

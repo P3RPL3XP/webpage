@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ajith</title>
+	<link rel="icon" href="apple.png">
+	<link rel="stylesheet" type="text/css" href="webpage.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="titlebar">
+				<div class="diva" style="background-image: url();">
+					<b id=b style="position: absolute;top:2.5%;left:1%;color:white;opacity: 0;transition: 2s;">Ajith</b>
+					<img src="Standing.jpg" id="apple" style="border-radius: 20px;">
+				</div>
+				<div class="divt">
+					<h1 id="h1">Apple</h1>
+				</div>
+				<div class="divh">
+					<img src="hamburgar.png" id="ham">
+				</div>
+			</div>
+		</header>
+		<nav>
+			<div class="navbar">
+				<ul>
+					<li><a href="#"><img src="home.png" alt="Home" class="h"></a></li>
+					<li ><a href="Validation.html"><img src="exam.png" alt="Exam" class="e"></a></li>
+					<li ><a href="#"><img src="setting.png" alt="Setting" class="s"></a>
+						 <ul id="dropdown">
+							<li><a href="" class="cse">CSE  </a>
+								<ul class="subdrop">
+									<li><a href="#">Faculty</a></li>
+									<li><a href="#">Student</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="ece">ECE</a>
+							</li>
+							<li><a href="#" class="mech">MEC</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#"></a><img src="phone.png" alt="Phone" class="p"></a>
+						<ul id="maps" style="display: flex;flex-direction: column;position: absolute;left: 68%;z-index: 5;">
+							<li><a href="nuzmap.html">RguktnMap</a></li>
+							<li><a href="sklm.html">SklmMap</a></li>
+						</ul>
+
+
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<aside>
+			<div class="sidebar">
+			<img src="sidear.png" onclick="hid();" style="width: 40px;height: 40px;cursor: pointer;"><h1>Apple</h1>
+				<ul>
+					<li><a href="#"><img src="home.png" alt="Home"></a></li>
+					<li><a href="Validation.html"><img src="exam.png" alt="Exam"></a></li>
+					<li><a href="#"><img id='settings' src="setting.png" alt="Setting"></a>
+						<ul id="setting-ul" style="position: absolute; top: 450px; left: 200px; display: none;">
+							<li><a href="" class="scse">CSE</a>
+								<ul class="scsel">
+									<li><a href="">Faculty</a></li>
+									<li><a href="">Student</a></li>
+								</ul>
+							</li>
+							<li><a href="" class="sece">ECE</a></li>
+							<li><a href="" class="smec">MECH</a></li>
+						</ul>
+					</li>
+					<li><a href="#"><img src="phone.png" alt="Phone"></a></li>
+				</ul>
+			</div>
+		</aside>
+		<section class="hpage">
+			<div class="filters">
+					<div id="contents">
+			            <h1>Contents</h1>
+			            <input type="text" onkeyup="filter(this);" id="search" placeholder="Search Here">
+			            <ul id="ids">
+			                <li class="d">N180380-Ajith</li>
+			                <li class="d">N180185-Handsome Sai</li>
+			                <li class="d">N180017-Vamsi</li>
+			                <li class="d">N180109-Pawan</li>
+			                <li class="d">N180000-Naresh</li>
+			                <li class="d">N180001-Jedidya</li>
+			                <li class="d">N180002-Narayana</li>
+			            </ul>
+			        </div>
+			</div>
+			<div class="slider" data-flickity='{"autoplay":true}'>
+				<div class="is" style="background-image: url(cross.jpg);"> </div>
+				<div class="is" style="background-image: url(dd.jpg);"> </div>
+				<div class="is" style="background-image: url(bp.jpg);"> </div>
+				<div class="is" style="background-image: url(fort.jpg);"> </div>
+			</div>
+			<div class="notify">
+				<div class="nnd"><h1>Notifications</h1></div>
+				<div class="nfd">Notification1</div>
+				<div class="nsd">Notification2</div>
+				<div class="ntd">Notification3</div>
+				<div class="nfrd">Notification4</div>
+				<div class="nffd">Notification5</div>
+			</div>
+		</section>
+		<footer>
+			<div class="ft"> 
+				<h1>@Ajith Industries</h1>
+			</div>
+			<div class="webc"><a href="https://www.hitwebcounter.com" target="_blank">
+			<img src="https://hitwebcounter.com/counter/counter.php?page=8013084&style=0005&nbdigits=5&type=page&initCount=0" title="Free Counter" Alt="web counter" border="0" /></a></div>  
+		</footer>
+	</div>
+	<script type="text/javascript">
+		document.getElementById("settings").addEventListener("mouseover",()=>{document.getElementById("setting-ul").style.display="block"})
+		var ds;
+		function filter(e){
+		    ds=Array.from(document.querySelectorAll(".d"))
+		    ds.forEach((item) => {
+		        if(item.textContent.toLowerCase().indexOf(e.value)!=-1 || item.textContent.toUpperCase().indexOf(e.value)!=-1)
+
+		        {
+		            item.style.display="block"
+		        }
+		        else{
+		            item.style.display="none"
+		        }
+		    })
+		}
+		function hid()
+		{
+			document.querySelector(".sidebar").style.visibility="hidden"
+			document.querySelector(".sidebar").style.animationDuration="10s"
+			document.querySelector(".sidebar").style.animationDelay="-10s"
+		}
+		var x=document.querySelector("#ham");
+		x.addEventListener("click",()=>{
+			document.querySelector(".sidebar").style.visibility="visible"
+		});
+		
+		var dropd=document.querySelector(".s")
+		dropd.addEventListener('mouseover',()=>{
+			document.querySelector("#dropdown").style.display="block";
+		});
+		dropd.addEventListener('click',()=>{
+			document.querySelector("#dropdown").style.display="none";
+		});
+
+		var cs=document.querySelector(".cse");
+		var ec=document.querySelector(".ece");
+		var mec=document.querySelector(".mech");
+		cs.addEventListener('mouseover',()=>{
+			document.querySelector(".subdrop").style.display="block";
+		});
+		cs.addEventListener('click',()=>{
+			document.querySelector(".subdrop").style.display="none";
+		});
+		ec.addEventListener('mouseover',()=>{
+			document.querySelector(".subdrop").style.display="none";
+		});
+		mec.addEventListener('mouseover',()=>{
+			document.querySelector(".subdrop").style.display="none";
+		});
+
+		var map=document.querySelector(".p")
+		map.addEventListener("mouseover",()=>{
+			document.querySelector("#maps").style.visibility="visible"
+
+		})
+		map.addEventListener("click",()=>{
+			document.querySelector("#maps").style.visibility="hidden"
+
+		})
+
+		var nv=document.querySelector("#apple")
+		nv.addEventListener('mouseover',()=>{
+			document.querySelector("#b").style.opacity="1"
+
+		})
+		nv.addEventListener('mouseleave',()=>{
+			document.querySelector("#b").style.opacity="0"
+
+		})
+		var scse=document.querySelector(".scse")
+		var sece=document.querySelector(".sece")
+		var smec=document.querySelector(".smec")
+		scse.addEventListener('mouseover',()=>{
+			document.querySelector(".scsel").style.display="block"
+		})
+		sece.addEventListener('mouseover',()=>{
+			document.querySelector(".scsel").style.display="none"
+		})
+		smec.addEventListener('mouseover',()=>{
+			document.querySelector(".scsel").style.display="none"
+		})
+		document.getElementById("settings").addEventListener("click",()=>{document.getElementById("setting-ul").style.display="none"})
+	</script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>
